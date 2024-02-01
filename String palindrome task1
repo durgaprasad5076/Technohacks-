@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+int main(){
+    int length;
+ char s1[10];
+ printf("enter the string:\n");
+ scanf("%s",&s1);
+ length= strlen(s1);
+ length=length-1;
+ int k=0;
+ while(length>k)
+ {
+     if(s1[length]!=s1[k])
+     {
+         printf("\n IT IS NON PALINDROME");
+         exit(0);
+     }
+     length--;
+     k++;
+ }
+
+printf("\n IT IS PALINDROME");
+
+ return 0;
+}
